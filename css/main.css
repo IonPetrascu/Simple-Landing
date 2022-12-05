@@ -1,0 +1,210 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	color:#000;
+	font-size:14px;
+}
+
+.container{
+	max-width:1230px;/*la 1170 adauogam 60px cite 30px dreapta stinga sa nu se lipeasca de ecran contantul*/
+	padding:0 30px;
+	margin:0 auto;/*aranjez conteinerul pe centru,cind ecranul se face mai mare decit 1230px  conteinerul ramine pe centru*/
+}
+
+.title-1{
+	font-weight: 600;
+	font-size: 34px;
+}
+
+/*header*/
+.header{
+	padding-top:46px;
+	background-color:#f1f1f1;
+}
+
+
+.header-nav{
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;/*pentru ca se arangjeaza dupa logo partea de jos*/
+	margin-bottom:76px;
+}
+
+
+.logo{
+	position:relative;
+	padding:0 12px 3px 0;
+	font-weight: 700;
+	line-height:1;/*facem 100% cacic ea este 130*/
+	font-size: 32px;
+	color:#000;
+	
+}
+
+.logo::after{
+	position:absolute;
+	right:0;
+	bottom:0;
+	content:"";
+	display:block;
+	width:8px;
+	height:8px;
+	background: #FDA300;
+	border-radius:50%;
+}
+/*nav*/
+.nav-list{
+	display:flex;
+	column-gap:50px;
+	font-weight:500;
+	font-size:14px;
+}
+.nav-button{
+	display:none;
+}
+.nav-link{
+	color:#000;
+}
+
+.nav-link.active{
+	color:#606060;
+}
+/*header content*/
+.header-row{
+	display:flex;
+	justify-content:space-between;
+	column-gap:30px;
+	
+}
+.header-content{
+	max-width:500px;
+	margin-top:124px;
+}
+
+.header-heading{
+	margin-bottom:20px;
+	font-weight:600;
+	font-size:44px;
+}
+.header-content p {
+	line-height:2;/*200%*/
+	
+}
+
+/*service*/
+.services{
+	padding:90px 0;
+}
+.services-row{
+	display:flex;
+	column-gap:30px;
+	row-gap:60px;
+	flex-wrap:wrap;
+	}
+
+.services-card{
+	flex:1 1 0; /*они одинакого жадны к свободному пространству и одинакого могут уступить 0 это базовый размер занимает столько сколько необходимо для его контента*/
+	min-width:315px;
+	
+	}
+
+.service-card-title{
+	margin-bottom:10px;
+	font-weight:600;
+	font-size:24px;
+	text-transform:uppercase;
+	
+}
+.service-card-img{
+	margin-bottom:30px;
+}
+.services-card p {
+	line-height: 200%;
+}
+
+/*Portfolio*/
+.portfolio{
+	background-color:#F1F1F1;
+	padding:90px 0;
+}
+
+.portfolio-title{
+	margin-bottom:70px;
+	text-align:center;
+	
+}
+.project{
+	text-align:center
+}
+
+.project + .project {
+	margin-top:90px;
+}
+ .project-title{
+	font-size: 18px;
+
+}
+
+.project-img{
+	margin-bottom:40px;
+}
+
+.project-title a {
+	color:#070707;
+	text-decoration:underline;
+
+}
+
+/*Footer*/
+.contacts{
+	 padding:90px 0;
+	 text-align:center;
+}
+.contacts-title{
+	margin-bottom:40px;
+}
+.contacts-content{
+	margin-left: auto;
+	margin-right:auto;
+	max-width:480px;
+	font-size: 18px;
+	margin-bottom:40px;
+	
+}
+
+.contacts-button{
+	margin-bottom:80px;
+	
+}
+.btn{
+	display:inline-block;/*чтобы она работала как блок но ширина определялась по кантенту в нетри */
+	padding:7px 22px;
+	color:#fff;
+	background-color: #070707;
+	border-radius:30px;
+	font-size:18px;
+	transition:background-color 0.2s ease-in , top 0.2s ease-in;
+	
+}
+.btn:hover, .btn:focus{
+	background-color:#323232;
+}
+
+.btn:active{
+	position:relative;
+	top:1px;
+	background-color:#000;
+}
+.contacts-social{
+	display:flex;
+	justify-content:center;
+	column-gap:60px;
+	align-items:center;
+	margin-bottom:40px;
+	
+}
+.contacts-footer{
+	color:#828282;
+}
